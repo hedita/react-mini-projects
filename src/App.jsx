@@ -1,17 +1,5 @@
-import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
+import InputHandler from "./InputHandler";
 
-function App() {
-  const [text,setText] = useState("");
-  return (
-    <div>
-      <input onChange={(e)=> {
-      setText(e.target.value)
-      }} />
-      <p>{text}</p>
-    </div>
-    )
-  }
-  
-  const root = ReactDOM.createRoot(document.getElementById("root"));
-  root.render(<App />)
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<InputHandler />)
