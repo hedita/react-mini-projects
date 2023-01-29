@@ -12,4 +12,4 @@ function InputHandler() {
     )
   }
   
-  export default InputHandler;
+export default InputHandler;
