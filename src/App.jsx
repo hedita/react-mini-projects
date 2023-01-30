@@ -1,9 +1,14 @@
 import ReactDOM from "react-dom/client";
 import InputHandler from "./InputHandler";
+import InputTextHandler from "./InputTextHandler";
 
 const App = () =>  {
   return (
-    <InputHandler />
+    <>
+      <InputHandler />
+      <hr />
+      <InputTextHandler />
+    </>
   );
 }
 const root = ReactDOM.createRoot(document.getElementById("root"));
