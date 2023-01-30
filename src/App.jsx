@@ -5,9 +5,9 @@ import CounterHandler from "./CounterHandler";
 const App = () =>  {
   return (
     <>
-    <InputHandler />
-    <hr />
-    <CounterHandler />
+      <InputHandler />
+      <hr />
+      <CounterHandler />
     </>
   );
 }
