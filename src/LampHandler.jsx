@@ -15,7 +15,6 @@ function LampHandler() {
           backgroundColor: lamp ? "red" : "white",
         }}
       >
-        {" "}
         LAMP
       </div>
     </>
