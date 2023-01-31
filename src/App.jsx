@@ -2,7 +2,7 @@ import ReactDOM from "react-dom/client";
 import InputHandler from "./InputHandler";
 import InputTextHandler from "./InputTextHandler";
 
-const App = () =>  {
+const App = () => {
   return (
     <>
       <InputHandler />
@@ -10,6 +10,6 @@ const App = () =>  {
       <InputTextHandler />
     </>
   );
-}
+};
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />)
+root.render(<App />);
