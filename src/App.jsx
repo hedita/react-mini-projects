@@ -9,7 +9,9 @@ const App = () => {
       <InputHandler />
       <hr />
       <InputTextHandler />
+      <hr />
       <CounterHandler />
+      <hr />
     </>
   );
 };
