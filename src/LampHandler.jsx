@@ -4,7 +4,7 @@ function LampHandler() {
   const [lamp, setLamp] = useState(false);
 
   const handleClick = () => {
-    setLamp((current) => !current);
+    setLamp(!lamp);
   };
 
   return (
