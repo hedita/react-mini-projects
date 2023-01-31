@@ -4,7 +4,7 @@ function LampHandler() {
   const [isOn, setIsOn] = useState(false);
 
   const handleClick = () => {
-    setLamp(!lamp);
+    setIsOn(!isOn);
   };
 
   return (
@@ -12,7 +12,7 @@ function LampHandler() {
       <button onClick={handleClick}>TURN OFF/ON</button>
       <div
         style={{
-          backgroundColor: lamp ? "red" : "white",
+          backgroundColor: isOn ? "red" : "white",
         }}
       >
         LAMP
