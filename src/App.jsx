@@ -1,6 +1,7 @@
 import ReactDOM from "react-dom/client";
 import InputHandler from "./InputHandler";
 import InputTextHandler from "./InputTextHandler";
+import CounterHandler from "./CounterHandler"
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <InputHandler />
       <hr />
       <InputTextHandler />
+      <CounterHandler />
     </>
   );
 };
