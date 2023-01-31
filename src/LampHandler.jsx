@@ -4,18 +4,21 @@ function LampHandler() {
   const [lamp, setLamp] = useState(false);
 
   const handleClick = () => {
-    setLamp(current => !current);
-  }
+    setLamp((current) => !current);
+  };
 
   return (
     <>
-			<button onClick={handleClick}>TURN OFF/ON</button>
+      <button onClick={handleClick}>TURN OFF/ON</button>
       <div
         style={{
           backgroundColor: lamp ? "red" : "white",
         }}
-      > LAMP</div>
-		</>
-  )
+      >
+        {" "}
+        LAMP
+      </div>
+    </>
+  );
 }
 export default LampHandler;
