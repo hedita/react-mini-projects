@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function LampHandler() {
-  const [lamp, setLamp] = useState(false);
+  const [isOn, setIsOn] = useState(false);
 
   const handleClick = () => {
     setLamp(!lamp);
