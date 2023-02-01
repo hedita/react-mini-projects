@@ -9,7 +9,7 @@ function LampHandler() {
 
   return (
     <>
-      <button onClick={handleClick}>TURN OFF/ON</button>
+      <button onClick={handleClick}> { isOn ? "OFF" : "ON"}</button>
       <div
         style={{
           backgroundColor: isOn ? "red" : "white",
