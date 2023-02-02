@@ -1,200 +1,38 @@
 import React, { useState } from "react";
 
-export const ToggleHandler0 = () => {
+function ToggleHandler () {
   const [toggle, setToggle] = useState("off");
+  const [toggle1, setToggle1] = useState("off");
 
   const handleClick = () => {
     setToggle(!toggle);
   };
-  return (
-    <div
-      onClick={handleClick}
-      style={{
-        width: 50,
-        height: 50,
-        background: toggle ? "red" : "blue",
-      }}
-    >
-    </div>
-  );
-};
-export const ToggleHandler1 = () => {
-  const [toggle, setToggle] = useState("off");
-
-  const handleClick = () => {
-    setToggle(!toggle);
+  const handleClick1 = () => {
+    setToggle1(!toggle1);
   };
   return (
-    <div
-      onClick={handleClick}
+    <>
+      <div
+        onClick={handleClick}
+        style={{
+          width: 50,
+          height: 50,
+          background: toggle ? "red" : "blue",
+        }}
+      >
+      </div>
+      <br />
+      <div
+      onClick={handleClick1}
       style={{
         width: 50,
         height: 50,
-        background: toggle ? "red" : "blue",
+        background: toggle1 ? "red" : "blue",
       }}
     >
     </div>
+    </>
   );
 };
-export const ToggleHandler2 = () => {
-  const [toggle, setToggle] = useState("off");
 
-  const handleClick = () => {
-    setToggle(!toggle);
-  };
-  return (
-    <div
-      onClick={handleClick}
-      style={{
-        width: 50,
-        height: 50,
-        background: toggle ? "red" : "blue",
-      }}
-    >
-    </div>
-  );
-};
-export const ToggleHandler3 = () => {
-  const [toggle, setToggle] = useState("off");
-
-  const handleClick = () => {
-    setToggle(!toggle);
-  };
-  return (
-    <div
-      onClick={handleClick}
-      style={{
-        width: 50,
-        height: 50,
-        background: toggle ? "red" : "blue",
-      }}
-    >
-    </div>
-  );
-};
-export const ToggleHandler4 = () => {
-  const [toggle, setToggle] = useState("off");
-
-  const handleClick = () => {
-    setToggle(!toggle);
-  };
-  return (
-    <div
-      onClick={handleClick}
-      style={{
-        width: 50,
-        height: 50,
-        background: toggle ? "red" : "blue",
-      }}
-    >
-    </div>
-  );
-};
-export const ToggleHandler5 = () => {
-  const [toggle, setToggle] = useState("off");
-
-  const handleClick = () => {
-    setToggle(!toggle);
-  };
-  return (
-    <div
-      onClick={handleClick}
-      style={{
-        width: 50,
-        height: 50,
-        background: toggle ? "red" : "blue",
-      }}
-    >
-    </div>
-  );
-};
-export const ToggleHandler6 = () => {
-  const [toggle, setToggle] = useState("off");
-
-  const handleClick = () => {
-    setToggle(!toggle);
-  };
-  return (
-    <div
-      onClick={handleClick}
-      style={{
-        width: 50,
-        height: 50,
-        background: toggle ? "red" : "blue",
-      }}
-    >
-    </div>
-  );
-};
-export const ToggleHandler7 = () => {
-  const [toggle, setToggle] = useState("off");
-
-  const handleClick = () => {
-    setToggle(!toggle);
-  };
-  return (
-    <div
-      onClick={handleClick}
-      style={{
-        width: 50,
-        height: 50,
-        background: toggle ? "red" : "blue",
-      }}
-    >
-    </div>
-  );
-};
-export const ToggleHandler8 = () => {
-  const [toggle, setToggle] = useState("off");
-
-  const handleClick = () => {
-    setToggle(!toggle);
-  };
-  return (
-    <div
-      onClick={handleClick}
-      style={{
-        width: 50,
-        height: 50,
-        background: toggle ? "red" : "blue",
-      }}
-    >
-    </div>
-  );
-};
-export const ToggleHandler9 = () => {
-  const [toggle, setToggle] = useState("off");
-
-  const handleClick = () => {
-    setToggle(!toggle);
-  };
-  return (
-    <div
-      onClick={handleClick}
-      style={{
-        width: 50,
-        height: 50,
-        background: toggle ? "red" : "blue",
-      }}
-    >
-    </div>
-  );
-};
-export const ToggleHandler10 = () => {
-  const [toggle, setToggle] = useState("off");
-
-  const handleClick = () => {
-    setToggle(!toggle);
-  };
-  return (
-    <div
-      onClick={handleClick}
-      style={{
-        width: 50,
-        height: 50,
-        background: toggle ? "red" : "blue",
-      }}
-    >
-    </div>
-  );
-};
+export default ToggleHandler;
