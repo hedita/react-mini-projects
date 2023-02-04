@@ -3,7 +3,7 @@ import InputHandler from "./InputHandler";
 import InputTextHandler from "./InputTextHandler";
 import CounterHandler from "./CounterHandler";
 import LampHandler from "./LampHandler";
-import ToggleHandler from "./ToggleHandler";
+import Boxes from "./Boxes";
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
       <hr />
       <LampHandler />
       <hr />
-      <ToggleHandler />
+      <Boxes />
     </>
   );
 };
