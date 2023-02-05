@@ -4,6 +4,7 @@ import InputTextHandler from "./InputTextHandler";
 import CounterHandler from "./CounterHandler";
 import LampHandler from "./LampHandler";
 import FaceMood from "./FaceMood";
+import Boxes from "./Boxes";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <LampHandler />
       <hr />
       <FaceMood />
+      <Boxes />
     </>
   );
 };
