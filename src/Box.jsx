@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Box () {
+function Box() {
   const [isOn, setIsOn] = useState(true);
 
   const handleClick = () => {
