@@ -1,8 +1,9 @@
 import ReactDOM from "react-dom/client";
 import InputHandler from "./InputHandler";
 import InputTextHandler from "./InputTextHandler";
-import CounterHandler from "./CounterHandler"
+import CounterHandler from "./CounterHandler";
 import LampHandler from "./LampHandler";
+import Boxes from "./Boxes";
 
 const App = () => {
   return (
@@ -14,6 +15,8 @@ const App = () => {
       <CounterHandler />
       <hr />
       <LampHandler />
+      <hr />
+      <Boxes />
     </>
   );
 };
