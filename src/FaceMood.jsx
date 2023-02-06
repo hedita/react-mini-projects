@@ -30,36 +30,39 @@ const people = [
     mood: "nice",
   },
 ];
+
 function FaceMood() {
-  const personList = people.map((person) => {
-    if (person.mood === "happy") {
+
+  const personList = people.map(({name, mood}) => {
+ 
+    if (mood === "happy") {
       return (
         <li>
-          {person.name} is {person.mood}. :)
+          {name} is {mood}. :)
         </li>
       );
-    } else if (person.mood === "interested") {
+    } else if (mood === "interested") {
       return (
         <li>
-          {person.name} is {person.mood}. :D
+          {name} is {mood}. :D
         </li>
       );
-    } else if (person.mood === "excited") {
+    } else if (mood === "excited") {
       return (
         <li>
-          {person.name} is {person.mood}. :))
+          {name} is {mood}. :))
         </li>
       );
-    } else if (person.mood === "sad") {
+    } else if (mood === "sad") {
       return (
         <li>
-          {person.name} is {person.mood}. :(
+          {name} is {mood}. :(
         </li>
       );
     } else {
       return (
         <li>
-          {person.name} is {person.mood}. :|
+          {name} is {mood}. :|
         </li>
       );
     }
