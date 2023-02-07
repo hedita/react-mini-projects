@@ -17,8 +17,9 @@ const App = () => {
       <hr />
       <LampHandler />
       <hr />
-      <FaceMood />
       <Boxes />
+      <hr />
+      <FaceMood />
     </>
   );
 };
