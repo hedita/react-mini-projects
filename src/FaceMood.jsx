@@ -32,40 +32,24 @@ const people = [
 ];
 
 function FaceMood() {
-
-  const personList = people.map(({name, mood}) => {
- 
+  const personList = people.map(({ name, mood},index) => {
+    let emoji = "";
     if (mood === "happy") {
-      return (
-        <li>
-          {name} is {mood}. :)
-        </li>
-      );
+      emoji = ":)";
     } else if (mood === "interested") {
-      return (
-        <li>
-          {name} is {mood}. :D
-        </li>
-      );
+      emoji = ":D";
     } else if (mood === "excited") {
-      return (
-        <li>
-          {name} is {mood}. :))
-        </li>
-      );
+      emoji = ":))";
     } else if (mood === "sad") {
-      return (
-        <li>
-          {name} is {mood}. :(
-        </li>
-      );
+      emoji = ":(";
     } else {
-      return (
-        <li>
-          {name} is {mood}. :|
-        </li>
-      );
+      emoji = ":|";
     }
+    return (
+      <li key={index}>
+        {name} is {mood}. {emoji}
+      </li>
+    );
   });
   return <ul>{personList}</ul>;
 }
