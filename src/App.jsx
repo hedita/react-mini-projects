@@ -3,6 +3,7 @@ import InputHandler from "./InputHandler";
 import InputTextHandler from "./InputTextHandler";
 import CounterHandler from "./CounterHandler";
 import LampHandler from "./LampHandler";
+import FaceMood from "./FaceMood";
 import Boxes from "./Boxes";
 
 const App = () => {
@@ -17,6 +18,8 @@ const App = () => {
       <LampHandler />
       <hr />
       <Boxes />
+      <hr />
+      <FaceMood />
     </>
   );
 };
