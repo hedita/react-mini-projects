@@ -63,7 +63,6 @@ const posts = [
 
 function Posts() {
   const [isShow, setIsShow] = useState(false);
-  
   const handleComments = () => {
     setIsShow(!isShow);
   }
