@@ -81,9 +81,9 @@ function Posts() {
     return (
       <Fragment key={post}>
         <h2>{title}</h2>
-        <p>{text}</p>
-        <p>{rate}</p>
         <img  display="block" width="100%" height= "300px" src={image.large} />
+        <p>{text}</p>
+        <p>Rate {rate} of 10</p>
         <button onClick={handleComments}>{isShow ? "Show Comments" : "Hide Comments"}</button>
         {commentList}
       </Fragment>
