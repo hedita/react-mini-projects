@@ -67,10 +67,10 @@ function Posts() {
   const handleComments = () => {
     setIsShow(!isShow);
   }
-  const postsList = posts.map(({id,title,text,rate, image,comments},post) => {
-  const commentList = comments.map(({author,text,likesCount},comment) =>{
+  const postsList = posts.map(({id,title,text,rate, image,comments}) => {
+  const commentList = comments.map(({author,text,likesCount,id},comment) =>{
     return (
-      <Fragment key={comment}>
+      <Fragment key={id}>
        <div style={{visibility: isShow ? "hidden" : "visible"}}>
          <p key={comment}>{author}:{text}</p>
          <p>likes: {likesCount}</p>
@@ -79,7 +79,7 @@ function Posts() {
     ) 
   })
     return (
-      <Fragment key={post}>
+      <Fragment key={id}>
         <h2>{title}</h2>
         <p>Rate {rate} of 10</p>
         <img  display="block" width="100%" height= "300px" src={image.large} />
