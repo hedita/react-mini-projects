@@ -1,3 +1,61 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;  
+}
+
 ul {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+.header {
+  color: #142d4c;
+
+}
+
+.rate {
+  color: #ff5722;
+}
+
+.text {
+  color: #323643;
+  line-height: 25px;
+}
+
+.img {
+  width:600px;
+  height: 300px; 
+}
+
+.button {
+  display: inline-block;
+  background-color: #9fd3c7;
+  border-radius: 10px;
+  border: 2px solid #455d7a;
+  color: #142d4c;
+  text-align: center;
+  padding: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0ffcd;
+}
+
+.author {
+  color: #38598b;
+}
+
+.comment-text {
+  color: #00204a;
+}
+
+.comment-container {
+  border: 2px solid #455d7a;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.likes-count {
+  color: #f95959; 
 }
