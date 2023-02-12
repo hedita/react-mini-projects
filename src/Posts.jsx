@@ -6,10 +6,10 @@ function Posts() {
   const postsList = posts.map(({ id, title, text, rate, image, comments }) => {
     return (
       <Fragment key={id}>
-        <h2>{title}</h2>
-        <p>Rate {rate} of 10</p>
-        <img display="block" width="100%" height="300px" src={image.large} />
-        <p>{text}</p>
+        <h2 className="header">{title}</h2>
+        <p className="rate">Rate {rate} of 10</p>
+        <img className="img" src={image.large} />
+        <p className="text">{text}</p>
         <Comments comments={comments} />
       </Fragment>
     );
