@@ -18,12 +18,12 @@ const App = () => {
       <hr />
       <LampHandler />
       <hr />
-      <Posts />  
+      <Posts />
       <hr />
       <Boxes />
       <hr />
       <FaceMood />
-      <hr />    
+      <hr />
     </>
   );
 };
