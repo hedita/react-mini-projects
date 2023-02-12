@@ -18,7 +18,7 @@ function Comments({ comments }) {
                 <div className="comment-container">
                   <p className="author">{author}:</p>
                   <p className="comment-text">{text}</p>
-                  <p className="likes-count">likes: {likesCount}</p>
+                  <p className="likes-count">{likesCount} likes</p>
                 </div>
               </Fragment>
             );
