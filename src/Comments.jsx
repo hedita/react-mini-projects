@@ -8,17 +8,18 @@ function Comments({ comments }) {
 
   return (
     <>
-      <button onClick={handleCommentVisibility}>
+      <button className="button" onClick={handleCommentVisibility}>
         {isCommentsVisible ? "Hide Comments" : "Show Comments"}
       </button>
       {isCommentsVisible
         ? comments.map(({ id, author, text, likesCount }) => {
             return (
               <Fragment key={id}>
-                <p>
-                  {author}:{text}
-                </p>
-                <p>likes: {likesCount}</p>
+                <div className="comment-container">
+                  <p className="author">{author}:</p>
+                  <p className="comment-text">{text}</p>
+                  <p className="likes-count">likes: {likesCount}</p>
+                </div>
               </Fragment>
             );
           })
