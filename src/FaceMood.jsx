@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 const people = [
   {
@@ -32,7 +32,7 @@ const people = [
 ];
 
 function FaceMood() {
-  const personList = people.map(({ name, mood},index) => {
+  const personList = people.map(({ name, mood }, index) => {
     let emoji = "";
     if (mood === "happy") {
       emoji = ":)";

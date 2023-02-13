@@ -5,6 +5,7 @@ import CounterHandler from "./CounterHandler";
 import LampHandler from "./LampHandler";
 import FaceMood from "./FaceMood";
 import Boxes from "./Boxes";
+import Posts from "./Posts";
 
 const App = () => {
   return (
@@ -17,9 +18,12 @@ const App = () => {
       <hr />
       <LampHandler />
       <hr />
+      <Posts />
+      <hr />
       <Boxes />
       <hr />
       <FaceMood />
+      <hr />
     </>
   );
 };
